@@ -4,14 +4,22 @@ document.getElementById("uploadForm").addEventListener("submit", function(event)
   var fileInput = document.getElementById("documentInput");
   var file = fileInput.files[0]; // Get the selected file
   
+  var selectedAPI = document.querySelector('input[name="api"]:checked').value; // Get the selected API
+  
   if (file) {
       var formData = new FormData(); // Create form data object
       formData.append("file", file); // Append the file to the form data
 
-      // Define the ML API endpoint URL
-      var apiUrl = "http://18.118.85.67:3000/predict";
+      // Define the selected ML API endpoint URL
+      var apiUrl = "";
 
-      // Send the document as a POST request to the ML API
+      if (selectedAPI === "api1") {
+          apiUrl = "http://api1.example.com/predict";
+      } else if (selectedAPI === "api2") {
+          apiUrl = "http://api2.example.com/predict";
+      } // Add more conditions for additional APIs if needed
+
+      // Send the document as a POST request to the selected ML API
       fetch(apiUrl, {
           method: "POST",
           body: formData
