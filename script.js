@@ -17,6 +17,14 @@ document.getElementById("uploadForm").addEventListener("submit", function(event)
           apiUrl = "http://api1.example.com/predict";
       } else if (selectedAPI === "api2") {
           apiUrl = "http://api2.example.com/predict";
+      } else if (selectedAPI === "api3") {
+          apiUrl = "http://api3.example.com/predict";
+      } else if (selectedAPI === "api4") {
+          apiUrl = "http://api4.example.com/predict";
+      } else if (selectedAPI === "api5") {
+          apiUrl = "http://api5.example.com/predict";
+      } else if (selectedAPI === "api6") {
+          apiUrl = "http://api6.example.com/predict";
       } // Add more conditions for additional APIs if needed
 
       // Send the document as a POST request to the selected ML API
