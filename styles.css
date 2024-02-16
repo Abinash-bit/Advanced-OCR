@@ -1,39 +1,72 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up standard font family and background color */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .center {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 32px; /* Increase the font size */
-    margin-bottom: 20px; /* Add some margin below the heading */
-  }
-  
-  #documentInput {
-    margin-right: 10px;
-  }
-  
-  #submitBtn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #submitBtn:hover {
-    background-color: #0056b3;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Create a container to center the content vertically */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the form */
+.form {
+  max-width: 500px; /* Set maximum width for the form */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align text elements */
+.center {
+  text-align: center;
+}
+
+/* Style headings */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Style file input and submit button */
+#documentInput {
+  margin-bottom: 10px;
+}
+
+#submitBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #0056b3;
+}
