@@ -9,7 +9,7 @@ document.getElementById("uploadForm").addEventListener("submit", function(event)
       formData.append("document", file); // Append the file to the form data
   
       // Define the ML API endpoint URL
-      var apiUrl = "http://18.118.85.67:3000/image_size";
+      var apiUrl = "http://18.118.85.67:3000/predict";
   
       // Send the document as a POST request to the ML API
       fetch(apiUrl, {
