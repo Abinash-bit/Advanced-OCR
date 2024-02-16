@@ -5,25 +5,25 @@
   box-sizing: border-box;
 }
 
-/* Set up standard font family and background color */
+/* Set up standard font family */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
 }
 
-/* Create a container to center the content vertically */
+/* Create a container with background color to center the content vertically */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #f0f0f0; /* Light gray background color */
 }
 
 /* Style the form */
 .form {
   max-width: 500px; /* Set maximum width for the form */
   padding: 20px;
-  background-color: #fff;
+  background-color: #fff; /* White background color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
